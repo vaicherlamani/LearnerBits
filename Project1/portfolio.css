@@ -1,0 +1,249 @@
+ @import url('https://fonts.googleapis.com/css2?family=Encode+Sans&display=swap');
+
+body{
+    margin:0px;
+   
+}
+
+.navbar{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(99, 167, 99);
+}
+.nav-left{
+    padding-left: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+.nav-right{
+    padding-right: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.a-element{
+    padding: 10px;
+    margin: 10px;
+    text-decoration: none;
+    color:black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+.nav-right a:hover{
+    color: white;
+}
+
+/* home */
+.home .max-width{
+    width: 100%;
+    display: flex;
+  }
+  .home .max-width .row{
+    margin-right: 0;
+  }
+  .home .home-content .text-1{
+      font-size: 27px;
+      margin: 20px;
+   
+  }
+  .home .home-content .text-2{
+      font-size: 75px;
+      font-weight: 600;
+      margin: 20px;
+    
+  }
+
+  .home .home-content a{
+      display: inline-block;
+      background:rgb(99, 167, 99);
+      color: #000;
+      text-decoration: none;
+      font-size: 25px;
+      padding: 12px 36px;
+      margin: 20px;
+      font-weight: 400;
+      border-radius: 6px;
+      border: 2px solid rgb(99, 167, 99);
+     
+  }
+  /*about*/
+  .About{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 90vh;
+  }
+  .btn{
+    background:rgb(99, 167, 99);
+    color: black;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin: 20px;
+    font-weight: 400;
+    border-radius: 6px;
+    border: 2px solid rgb(99, 167, 99);
+    text-decoration: none;
+
+  }
+ 
+.content-left{
+    width:50vw;
+    text-align: justify;
+    padding-left: 200px;
+ }
+.content-right{
+    width:50vw;
+    padding-left: 100px;
+}
+.content-left h1{
+    font-family: 'Montserrat', sans-serif;
+}
+.content-left p{
+    font-family: 'Encode Sans', sans-serif;
+    font-size: 20px;
+    line-height: normal;
+}
+/**Education**/
+.Education{
+    padding:50px;
+    text-align: center;
+}
+.title{
+    font-family: 'Ubuntu', sans-serif;
+    letter-spacing: 3px;
+    text-align: center;
+    font-size: 50px;
+    font-style: italic;
+    color:rgb(99, 167, 99);
+}
+.edu-content{
+    display:flex;
+    flex-direction: row;
+}
+.card{
+    margin:20px;
+    width:400px;
+    padding:20px;
+}
+.card .text{
+    font-family:  'Montserrat', sans-serif;
+    font-size: 25px;
+    text-align: center;
+   
+}
+.card ul li{
+    font-family:  'Montserrat', sans-serif;
+    font-size: 20px;
+    text-align: justify;
+}
+.Education .edu-content .card:hover{
+    background: rgb(99, 167, 99);
+
+}
+
+/**Skills**/
+.skills .skills-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+.skills .skills-content .left{
+    margin:50px;
+    width:50vw;
+}
+.skills .skills-content .left .text{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.skills .skills-content .left p{
+    text-align:left;
+    letter-spacing:normal;
+}
+.skills .skills-content .left a{
+    display: inline-block;
+    background: rgb(99, 167, 99);
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 16px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid rgb(99, 167, 99);
+    transition: all 0.3s ease;
+}
+.skills .skills-content .left a:hover{
+    color: rgb(99, 167, 99);
+    background: none;
+}
+.skills .skills-content .right{
+ 
+    width: 50vw;
+    margin-right: 50px;
+}
+.skills .skills-content .right .bars{
+    margin-bottom: 15px;
+}
+.skills .skills-content .right .info{
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+.skills .skills-content .right span{
+    font-weight: 500;
+    font-size: 18px;
+}
+.skills .skills-content .right .line{
+    height: 5px;
+    width: 100%;
+    background: lightgrey;
+    position: relative;
+}
+.skills .skills-content .right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background:rgb(99, 167, 99);
+}
+.skills-content .right .html::before{
+    width: 75%;
+}
+.skills-content .right .css::before{
+    width: 70%;
+}
+.skills-content .right .js::before{
+    width: 40%;
+}
+.skills-content .right .c::before{
+    width: 40%;
+}
+.skills-content .right .cj::before{
+    width: 50%;
+}
+/**contact**/
+.contact{
+    text-align: center;
+    padding:10px;
+}
+.contact-info{
+    font-family:  'Montserrat', sans-serif;
+    font-size: 25px;
+}
+.social-image-icon{
+    height:50px;
+    padding: 20px;
+    
+}
+
+
